@@ -6894,5 +6894,3 @@ ReGui:DefineElement("PopupModal", {
 
 --// Load the library
 --ReGui:Init()
-
-return ReGui
