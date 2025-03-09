@@ -6892,6 +6892,10 @@ ReGui:DefineElement("PopupModal", {
 	end,
 })
 
---// Load the library
-ReGui:Init()
+local PrefabsId = `rbxassetid://{ReGui.PrefabsId}`
+
+ReGui:Init({
+	Prefabs = game:GetService("InsertService"):LoadLocalAsset(PrefabsId)
+})
+
 warn("ran")
